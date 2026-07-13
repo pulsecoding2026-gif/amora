@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset base (fallback de segurança): garante fonte sans + fundo escuro MESMO se o
+   Tailwind (CDN) atrasar ou falhar. Os seletores :where() têm especificidade ZERO,
+   então o preflight/utilities do Tailwind sempre vencem quando carregam. */
+*, *::before, *::after { box-sizing: border-box; border: 0 solid; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #0d0c0e;
+  color: #fafafa;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+:where(h1, h2, h3, h4, h5, h6, p, figure, blockquote) { margin: 0; font-family: inherit; }
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Playfair Display', serif;
+  font-size: inherit;
+  font-weight: inherit;
+}
+:where(img, svg, video) { display: block; max-width: 100%; height: auto; }
+:where(button, input, select, textarea) { font: inherit; color: inherit; background-color: transparent; border: none; }
+:where(a) { color: inherit; text-decoration: inherit; }
+:where(ul, ol) { margin: 0; padding: 0; list-style: none; }

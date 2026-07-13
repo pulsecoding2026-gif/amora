@@ -1,0 +1,14 @@
+{
+  "name": "pulse-react-app",
+  "main": "/index.tsx",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "@supabase/supabase-js": "^2.0.0",
+    "lucide-react": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest",
+    "class-variance-authority": "latest"
+  }
+}
